@@ -150,7 +150,7 @@ class LinkForm(django.forms.models.ModelForm):
         self.fields['link_page'].queryset = cms.models.Page.objects.drafts().on_site(site)
 
     class Meta:
-        model = models.Boostrap3ButtonPlugin
+        model = models.Bootstrap3ButtonPlugin
         exclude = (
             'page', 'position', 'placeholder', 'language', 'plugin_type',
         )
@@ -176,10 +176,10 @@ class LinkForm(django.forms.models.ModelForm):
     media = property(_get_media)
 
 
-class Boostrap3LabelPluginForm(django.forms.models.ModelForm):
+class Bootstrap3LabelPluginForm(django.forms.models.ModelForm):
 
     class Meta:
-        model = models.Boostrap3LabelPlugin
+        model = models.Bootstrap3LabelPlugin
         exclude = ('page', 'position', 'placeholder', 'language', 'plugin_type')
         # When used inside djangocms-text-ckeditor
         # this causes the label field to be prefilled with the selected text.
@@ -206,7 +206,7 @@ class PanelPluginBaseForm(django.forms.models.ModelForm):
     )
 
     class Meta:
-        model = models.Boostrap3PanelPlugin
+        model = models.Bootstrap3PanelPlugin
         exclude = ('page', 'position', 'placeholder', 'language', 'plugin_type')
 
 

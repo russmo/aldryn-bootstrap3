@@ -218,7 +218,7 @@ class LinkMixin(models.Model):
         }
 
         required_link_classes = (
-            'Boostrap3ButtonPlugin',
+            'Bootstrap3ButtonPlugin',
         )
 
         if len(provided_link_fields) > 1:

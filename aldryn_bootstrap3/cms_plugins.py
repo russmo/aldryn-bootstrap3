@@ -125,7 +125,7 @@ class Bootstrap3BlockquoteCMSPlugin(CMSPluginBase):
     CSS - Typography: "Blockquote" Plugin
     http://getbootstrap.com/css/#type-blockquotes
     """
-    model = models.Boostrap3BlockquotePlugin
+    model = models.Bootstrap3BlockquotePlugin
     name = _('Blockquote')
     module = _('Bootstrap 3')
     change_form_template = 'admin/aldryn_bootstrap3/base.html'
@@ -153,7 +153,7 @@ class Bootstrap3CiteCMSPlugin(CMSPluginBase):
     CSS - Typography: "Cite" Plugin
     http://getbootstrap.com/css/#type-blockquotes
     """
-    model = models.Boostrap3CitePlugin
+    model = models.Bootstrap3CitePlugin
     name = _('Cite')
     module = _('Bootstrap 3')
     change_form_template = 'admin/aldryn_bootstrap3/base.html'
@@ -213,7 +213,7 @@ class Bootstrap3ButtonCMSPlugin(CMSPluginBase):
     CSS - Buttons: "Button/Link" Plugin
     http://getbootstrap.com/css/#buttons
     """
-    model = models.Boostrap3ButtonPlugin
+    model = models.Bootstrap3ButtonPlugin
     name = _('Link/Button')
     module = _('Bootstrap 3')
     form = forms.LinkForm
@@ -265,7 +265,7 @@ class Bootstrap3ImageCMSPlugin(CMSPluginBase):
     CSS - Images: Plugin
     http://getbootstrap.com/css/#images
     """
-    model = models.Boostrap3ImagePlugin
+    model = models.Bootstrap3ImagePlugin
     name = _('Image')
     module = _('Bootstrap 3')
     change_form_template = 'admin/aldryn_bootstrap3/base.html'
@@ -394,7 +394,7 @@ class Bootstrap3IconCMSPlugin(CMSPluginBase):
     Component - Font Awesome: "Icon" Plugin
     http://fontawesome.io/
     """
-    model = models.Boostrap3IconPlugin
+    model = models.Bootstrap3IconPlugin
     name = _('Icon')
     module = _('Bootstrap 3')
     change_form_template = 'admin/aldryn_bootstrap3/base.html'
@@ -425,10 +425,10 @@ class Bootstrap3LabelCMSPlugin(CMSPluginBase):
     Component - Label: Plugin
     http://getbootstrap.com/components/#labels
     """
-    model = models.Boostrap3LabelPlugin
+    model = models.Bootstrap3LabelPlugin
     name = _('Label')
     module = _('Bootstrap 3')
-    form = forms.Boostrap3LabelPluginForm
+    form = forms.Bootstrap3LabelPluginForm
     change_form_template = 'admin/aldryn_bootstrap3/plugins/label/change_form.html'
     render_template = 'aldryn_bootstrap3/plugins/label.html'
     text_enabled = True
@@ -458,7 +458,7 @@ class Bootstrap3JumbotronCMSPlugin(CMSPluginBase):
     Component - Jumbotron: Plugin
     http://getbootstrap.com/components/#jumbotron
     """
-    model = models.Boostrap3JumbotronPlugin
+    model = models.Bootstrap3JumbotronPlugin
     name = _('Jumbotron')
     module = _('Bootstrap 3')
     change_form_template = 'admin/aldryn_bootstrap3/base.html'
@@ -487,7 +487,7 @@ class Bootstrap3AlertCMSPlugin(CMSPluginBase):
     Component - Alert: Plugin
     http://getbootstrap.com/components/#alerts
     """
-    model = models.Boostrap3AlertPlugin
+    model = models.Bootstrap3AlertPlugin
     name = _('Alert')
     module = _('Bootstrap 3')
     change_form_template = 'admin/aldryn_bootstrap3/base.html'
@@ -584,7 +584,7 @@ class Bootstrap3PanelCMSPlugin(CMSPluginBase):
     Component - Panel: "Wrapper" Plugin
     http://getbootstrap.com/components/#panels
     """
-    model = models.Boostrap3PanelPlugin
+    model = models.Bootstrap3PanelPlugin
     name = _('Panel')
     module = _('Bootstrap 3')
     form = forms.PanelPluginBaseForm
@@ -624,9 +624,9 @@ class Bootstrap3PanelCMSPlugin(CMSPluginBase):
         data = form.cleaned_data
         extra = {}
         subplugins = (
-            ('create_heading', models.Boostrap3PanelHeadingPlugin, Bootstrap3PanelHeadingCMSPlugin),
-            ('create_body', models.Boostrap3PanelBodyPlugin, Bootstrap3PanelBodyCMSPlugin),
-            ('create_footer', models.Boostrap3PanelFooterPlugin, Bootstrap3PanelFooterCMSPlugin),
+            ('create_heading', models.Bootstrap3PanelHeadingPlugin, Bootstrap3PanelHeadingCMSPlugin),
+            ('create_body', models.Bootstrap3PanelBodyPlugin, Bootstrap3PanelBodyCMSPlugin),
+            ('create_footer', models.Bootstrap3PanelFooterPlugin, Bootstrap3PanelFooterCMSPlugin),
         )
         existing_plugins = [p.plugin_type for p in obj.get_children()]
         for field, model_class, plugin_class in subplugins:
@@ -652,7 +652,7 @@ class Bootstrap3PanelHeadingCMSPlugin(CMSPluginBase):
     Component - Panel: "Heading" Plugin
     http://getbootstrap.com/components/#panels-heading
     """
-    model = models.Boostrap3PanelHeadingPlugin
+    model = models.Bootstrap3PanelHeadingPlugin
     name = _('Panel header')
     module = _('Bootstrap 3')
     change_form_template = 'admin/aldryn_bootstrap3/base.html'
@@ -682,7 +682,7 @@ class Bootstrap3PanelBodyCMSPlugin(CMSPluginBase):
     Component - Panel: "Body" Plugin
     http://getbootstrap.com/components/#panels
     """
-    model = models.Boostrap3PanelBodyPlugin
+    model = models.Bootstrap3PanelBodyPlugin
     name = _('Panel body')
     module = _('Bootstrap 3')
     change_form_template = 'admin/aldryn_bootstrap3/base.html'
@@ -710,7 +710,7 @@ class Bootstrap3PanelFooterCMSPlugin(CMSPluginBase):
     Component - Panel: "Footer" Plugin
     http://getbootstrap.com/components/#panels-footer
     """
-    model = models.Boostrap3PanelFooterPlugin
+    model = models.Bootstrap3PanelFooterPlugin
     name = _('Panel footer')
     module = _('Bootstrap 3')
     change_form_template = 'admin/aldryn_bootstrap3/base.html'
@@ -738,7 +738,7 @@ class Bootstrap3WellCMSPlugin(CMSPluginBase):
     Component - Wells: Plugin
     http://getbootstrap.com/components/#wells
     """
-    model = models.Boostrap3WellPlugin
+    model = models.Bootstrap3WellPlugin
     name = _('Well')
     module = _('Bootstrap 3')
     change_form_template = 'admin/aldryn_bootstrap3/base.html'
@@ -1047,7 +1047,7 @@ class Bootstrap3SpacerCMSPlugin(CMSPluginBase):
     """
     Custom - Spacer: Plugin
     """
-    model = models.Boostrap3SpacerPlugin
+    model = models.Bootstrap3SpacerPlugin
     name = _('Spacer')
     module = _('Bootstrap 3')
     change_form_template = 'admin/aldryn_bootstrap3/base.html'

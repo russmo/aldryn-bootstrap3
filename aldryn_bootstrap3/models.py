@@ -179,7 +179,7 @@ for size, name in constants.DEVICE_CHOICES:
 
 
 @python_2_unicode_compatible
-class Boostrap3BlockquotePlugin(CMSPlugin):
+class Bootstrap3BlockquotePlugin(CMSPlugin):
     """
     CSS - Typography: "Blockquote" Model
     http://getbootstrap.com/css/#type-blockquotes
@@ -207,7 +207,7 @@ class Boostrap3BlockquotePlugin(CMSPlugin):
 
 
 @python_2_unicode_compatible
-class Boostrap3CitePlugin(CMSPlugin):
+class Bootstrap3CitePlugin(CMSPlugin):
     """
     CSS - Typography: "Cite" Model
     http://getbootstrap.com/css/#type-blockquotes
@@ -263,7 +263,7 @@ class Bootstrap3CodePlugin(CMSPlugin):
 
 
 @python_2_unicode_compatible
-class Boostrap3ButtonPlugin(CMSPlugin, model_fields.LinkMixin):
+class Bootstrap3ButtonPlugin(CMSPlugin, model_fields.LinkMixin):
     """
     CSS - Buttons: "Button/Link" Model
     http://getbootstrap.com/css/#buttons
@@ -313,7 +313,7 @@ class Boostrap3ButtonPlugin(CMSPlugin, model_fields.LinkMixin):
 
 
 @python_2_unicode_compatible
-class Boostrap3ImagePlugin(CMSPlugin):
+class Bootstrap3ImagePlugin(CMSPlugin):
     """
     CSS - Images: Model
     http://getbootstrap.com/css/#images
@@ -499,7 +499,7 @@ class Bootstrap3ResponsivePlugin(CMSPlugin):
 
 
 @python_2_unicode_compatible
-class Boostrap3IconPlugin(CMSPlugin):
+class Bootstrap3IconPlugin(CMSPlugin):
     """
     Component - Glyphicons: "Icon" Model
     http://getbootstrap.com/components/#glyphicons
@@ -524,7 +524,7 @@ class Boostrap3IconPlugin(CMSPlugin):
 
 
 @python_2_unicode_compatible
-class Boostrap3LabelPlugin(CMSPlugin):
+class Bootstrap3LabelPlugin(CMSPlugin):
     """
     Component - Label: Model
     http://getbootstrap.com/components/#labels
@@ -557,7 +557,7 @@ class Boostrap3LabelPlugin(CMSPlugin):
 
 
 @python_2_unicode_compatible
-class Boostrap3JumbotronPlugin(CMSPlugin):
+class Bootstrap3JumbotronPlugin(CMSPlugin):
     """
     Component - Jumbotron: Model
     http://getbootstrap.com/components/#jumbotron
@@ -588,7 +588,7 @@ class Boostrap3JumbotronPlugin(CMSPlugin):
 
 
 @python_2_unicode_compatible
-class Boostrap3AlertPlugin(CMSPlugin):
+class Bootstrap3AlertPlugin(CMSPlugin):
     """
     Component - Alert: Model
     http://getbootstrap.com/components/#alerts
@@ -689,7 +689,7 @@ class Bootstrap3ListGroupItemPlugin(CMSPlugin):
 
 
 @python_2_unicode_compatible
-class Boostrap3PanelPlugin(CMSPlugin):
+class Bootstrap3PanelPlugin(CMSPlugin):
     """
     Component - Panel: "Wrapper" Model
     http://getbootstrap.com/components/#panels
@@ -716,7 +716,7 @@ class Boostrap3PanelPlugin(CMSPlugin):
 
 
 @python_2_unicode_compatible
-class Boostrap3PanelHeadingPlugin(CMSPlugin):
+class Bootstrap3PanelHeadingPlugin(CMSPlugin):
     """
     Component - Panel: "Heading" Model
     http://getbootstrap.com/components/#panels-heading
@@ -741,7 +741,7 @@ class Boostrap3PanelHeadingPlugin(CMSPlugin):
 
 
 @python_2_unicode_compatible
-class Boostrap3PanelBodyPlugin(CMSPlugin):
+class Bootstrap3PanelBodyPlugin(CMSPlugin):
     """
     Component - Panel: "Body" Model
     http://getbootstrap.com/components/#panels
@@ -760,7 +760,7 @@ class Boostrap3PanelBodyPlugin(CMSPlugin):
 
 
 @python_2_unicode_compatible
-class Boostrap3PanelFooterPlugin(CMSPlugin):
+class Bootstrap3PanelFooterPlugin(CMSPlugin):
     """
     Component - Panel: "Footer" Model
     http://getbootstrap.com/components/#panels-footer
@@ -779,7 +779,7 @@ class Boostrap3PanelFooterPlugin(CMSPlugin):
 
 
 @python_2_unicode_compatible
-class Boostrap3WellPlugin(CMSPlugin):
+class Bootstrap3WellPlugin(CMSPlugin):
     """
     Component - Wells: Model
     http://getbootstrap.com/components/#wells
@@ -1174,7 +1174,7 @@ class Bootstrap3CarouselSlideFolderPlugin(CMSPlugin):
 
 
 @python_2_unicode_compatible
-class Boostrap3SpacerPlugin(CMSPlugin):
+class Bootstrap3SpacerPlugin(CMSPlugin):
     """
     Custom - Spacer: Model
     """
